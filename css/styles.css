@@ -1,0 +1,451 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 90%);
+    font-family: "Funnel Display", sans-serif;
+}
+
+
+/* header component */
+
+header {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    color: hsl(0, 0%, 90%);
+    background-color: black;
+    text-shadow: 1px 1px gray;
+}
+
+header .header-image {
+    height: 100%;
+    background-image: url(../media/sunset-palmtree.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    height: 5rem;
+}
+
+header nav .title {
+    display: block;
+    text-align: center;
+}
+
+header nav .menu-icon {
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+header nav .links a {
+    display: none;
+    margin-right: 1rem;
+}
+
+header .sign-up-button {
+    display: none;
+    text-decoration: none;
+    width: 25%;
+    margin: 0;
+}
+
+header .sign-up {
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 90%);
+    padding: 0.5rem;
+    width: 5rem;
+    margin: 0 1rem 0 auto;
+    text-align: center;
+    color: black;
+}
+
+header .sub-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+}
+
+
+/* main component */
+
+main article {
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+main .discover section img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+main .about-us img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+main .travel-companion img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+main .next-destination {
+    padding-bottom: 1rem;
+}
+
+main .next-destination img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+main .next-destination a {
+    text-decoration: none;
+}
+
+main .next-destination .get-started {
+    border-radius: 1rem;
+    background-color: hsl(175, 100%, 35%);
+    color: hsl(0, 0%, 90%);
+    padding: 0.5rem;
+    width: 10rem;
+    margin: auto;
+    text-align: center;
+}
+
+main .next-destination .get-started:hover {
+    background-color: hsl(174, 100%, 25%);
+}
+
+/* footer component */
+
+footer {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    color: hsl(0, 0%, 90%);
+    position: relative;
+}
+
+footer .footer-image {
+    height: 100%;
+    background-image: url(../media/travel-post-cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+}
+
+footer .footer-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer .sign-up {
+    text-align: center;
+}
+
+footer .sign-up input[type=text],
+select {
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    opacity: 0.3;
+    margin: 0.2rem;
+    width: 80%;
+
+}
+
+footer .sign-up input[type=submit] {
+    background-color: hsl(0, 0%, 90%);
+    padding: 0.6rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 75%;
+    margin: 0.2rem;
+    font-size: 1rem;
+}
+
+footer .sign-up input[type=submit]:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+footer nav {
+    box-sizing: border-box;
+}
+
+footer .footer-links {
+    margin: 1rem;
+    display: grid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-template-columns: 1fr 1fr;
+}
+
+footer .footer-links li {
+    list-style: none;
+}
+
+footer .footer-links a {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none;
+}
+
+footer .footer-bottom {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.6em;
+    border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+footer .footer-bottom a {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none;
+}
+
+/* responsive component */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /* header */
+
+    header nav .title {
+        width: 50%;
+        order: 1;
+    }
+
+    header nav .links {
+        width: 20%;
+    }
+
+    header nav .sign-up-button {
+        width: 30%;
+    }
+
+    header nav .menu-icon {
+        display: none;
+    }
+
+    header nav .links a:nth-child(1) {
+        order: 0;
+        display: inline;
+    }
+
+    header .links a {
+        color: white;
+        text-decoration: none;
+    }
+
+    header .sign-up-button {
+        display: inline;
+        order: 2;
+    }
+
+    /* main */
+
+    main .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    main .discover h2 {
+        text-align: center;
+    }
+
+    main .discover .discover-text {
+        grid-column: 1 / 3;
+    }
+
+    main .discover .discover-image {
+        position: relative;
+    }
+
+    main .discover .discover-image h3 {
+        position: absolute;
+        left: 1.5em;
+        bottom: 0.2em;
+        color: whitesmoke;
+        text-shadow: 1px 1px gray;
+    }
+
+    main .discover section p {
+        padding: 0 1em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* header */
+
+    header nav .title {
+        width: 45%;
+    }
+
+    header nav .links {
+        width: 25%;
+    }
+
+    header nav .links a:nth-child(2) {
+        display: inline;
+    }
+
+
+    /* main - about-us */
+
+    main .about-us {
+        position: relative;
+        text-align: center;
+    }
+
+    main .about-us h2 {
+        position: absolute;
+        top: 0.2em;
+        width: 100%;
+        color: whitesmoke;
+        text-shadow: 1px 1px grey;
+    }
+
+    main .about-us p {
+        position: absolute;
+        top: 4rem;
+        color: whitesmoke;
+        text-shadow: 1px 1px grey;
+        margin: 1em 2em;
+    }
+
+    /* main - travel-companion */
+
+    main .travel-companion {
+        position: relative;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 1px 1px grey;
+    }
+
+    main .travel-companion h2 {
+        position: absolute;
+        top: 0.2em;
+        width: 100%;
+    }
+
+    main .travel-companion .travel-text {
+        position: absolute;
+        top: 4rem;
+    }
+
+    main .travel-companion .travel-text>p {
+        padding: 0 1em 1em;
+    }
+
+    main .travel-companion ul {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .travel-companion li {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.5rem;
+        list-style: none;
+        margin: 0 2rem 0rem 0;
+        align-items: center;
+    }
+
+    main .travel-companion li h3 {
+        padding: 0.5em;
+    }
+
+    main .travel-companion li p {
+        padding: 0 1em;
+    }
+
+    /* main - next-destination */
+
+    main .next-destination {
+        position: relative;
+    }
+
+    main .next-destination h2 {
+        position: absolute;
+        top: 0.2em;
+        width: 100%;
+        color: whitesmoke;
+        text-shadow: 1px 1px grey;
+    }
+
+    main .next-destination .get-started-content {
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+        width: 35%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 1rem;
+        padding: 1rem;
+        color: whitesmoke;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* header */
+
+    header nav .title {
+        width: 40%;
+    }
+
+    header nav .links {
+        width: 30%;
+    }
+
+    header nav .links a:nth-child(3) {
+        display: inline;
+    }
+
+    /* main */
+
+    main .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    main .discover .discover-text {
+        grid-column: 1 / 5;
+    }
+
+    /* footer */
+
+    footer .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
