@@ -1,5 +1,8 @@
 html {
     scroll-behavior: smooth;
+    /* costum properties */
+    --main-font-color: hsl(0, 0%, 90%);
+    --main-text-shadow: 1px 1px grey;
 }
 
 body {
@@ -13,12 +16,11 @@ body {
 
 header {
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     text-align: left;
     color: hsl(0, 0%, 90%);
     background-color: black;
-    text-shadow: 1px 1px gray;
 }
 
 header .header-image {
@@ -45,10 +47,11 @@ header nav {
 header nav .title {
     display: block;
     text-align: center;
+    text-shadow: 1px 1px gray;
 }
 
 header nav .menu-icon {
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--main-font-color);
     border-radius: 50%;
     padding: 0.5rem;
 }
@@ -56,6 +59,7 @@ header nav .menu-icon {
 header nav .links a {
     display: none;
     margin-right: 1rem;
+    text-shadow: 1px 1px gray;
 }
 
 header .sign-up-button {
@@ -67,7 +71,7 @@ header .sign-up-button {
 
 header .sign-up {
     border-radius: 1rem;
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--main-font-color);
     padding: 0.5rem;
     width: 5rem;
     margin: 0 1rem 0 auto;
@@ -80,6 +84,7 @@ header .sub-title {
     bottom: 0;
     left: 0;
     margin: 1rem;
+    text-shadow: 1px 1px gray;
 }
 
 
@@ -121,11 +126,12 @@ main .next-destination a {
 main .next-destination .get-started {
     border-radius: 1rem;
     background-color: hsl(175, 100%, 35%);
-    color: hsl(0, 0%, 90%);
     padding: 0.5rem;
     width: 10rem;
     margin: auto;
     text-align: center;
+    color: var(--main-font-color);
+    text-shadow: var(--main-text-shadow);
 }
 
 main .next-destination .get-started:hover {
@@ -136,9 +142,10 @@ main .next-destination .get-started:hover {
 
 footer {
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    color: hsl(0, 0%, 90%);
+    color: var(--main-font-color);
+    text-shadow: var(--main-text-shadow);
     position: relative;
 }
 
@@ -173,11 +180,10 @@ select {
     opacity: 0.3;
     margin: 0.2rem;
     width: 80%;
-
 }
 
 footer .sign-up input[type=submit] {
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--main-font-color);
     padding: 0.6rem;
     border: none;
     border-radius: 1rem;
@@ -208,8 +214,9 @@ footer .footer-links li {
 }
 
 footer .footer-links a {
-    color: hsl(0, 0%, 90%);
     text-decoration: none;
+    color: var(--main-font-color);
+    text-shadow: var(--main-text-shadow);
 }
 
 footer .footer-bottom {
@@ -218,11 +225,11 @@ footer .footer-bottom {
     width: 100%;
     text-align: center;
     font-size: 0.6em;
-    border-top: 1px solid hsl(0, 0%, 90%);
+    border-top: 1px solid var(--main-font-color);
 }
 
 footer .footer-bottom a {
-    color: hsl(0, 0%, 90%);
+    color: var(--main-font-color);
     text-decoration: none;
 }
 
@@ -257,8 +264,9 @@ footer .footer-bottom a {
     }
 
     header .links a {
-        color: white;
         text-decoration: none;
+        color: var(--main-font-color);
+        text-shadow: var(--main-text-shadow);
     }
 
     header .sign-up-button {
@@ -290,8 +298,8 @@ footer .footer-bottom a {
         position: absolute;
         left: 1.5em;
         bottom: 0.2em;
-        color: whitesmoke;
-        text-shadow: 1px 1px gray;
+        color: var(--main-font-color);
+        text-shadow: var(--main-text-shadow);
     }
 
     main .discover section p {
@@ -328,16 +336,16 @@ footer .footer-bottom a {
         position: absolute;
         top: 0.2em;
         width: 100%;
-        color: whitesmoke;
-        text-shadow: 1px 1px grey;
+        color: var(--main-font-color);
+        text-shadow: var(--main-text-shadow);
     }
 
     main .about-us p {
         position: absolute;
         top: 4rem;
-        color: whitesmoke;
-        text-shadow: 1px 1px grey;
         margin: 1em 2em;
+        color: var(--main-font-color);
+        text-shadow: var(--main-text-shadow);
     }
 
     /* main - travel-companion */
@@ -345,8 +353,8 @@ footer .footer-bottom a {
     main .travel-companion {
         position: relative;
         text-align: center;
-        color: whitesmoke;
-        text-shadow: 1px 1px grey;
+        color: var(--main-font-color);
+        text-shadow: var(--main-text-shadow);
     }
 
     main .travel-companion h2 {
@@ -396,8 +404,9 @@ footer .footer-bottom a {
         position: absolute;
         top: 0.2em;
         width: 100%;
-        color: whitesmoke;
-        text-shadow: 1px 1px grey;
+        text-align: center;
+        color: var(--main-font-color);
+        text-shadow: var(--main-text-shadow);
     }
 
     main .next-destination .get-started-content {
@@ -408,7 +417,8 @@ footer .footer-bottom a {
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 1rem;
         padding: 1rem;
-        color: whitesmoke;
+        color: var(--main-font-color);
+        text-shadow: var(--main-text-shadow);
     }
 }
 
